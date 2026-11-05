@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx, 
+            amsmath,
+            fancyhdr, 
+            pgfplots,
+            lipsum,
+            xcolor,
+            enumerate}
+\usepackage[margin=1in]{geometry}
+\usepackage[shortlabels]{enumitem}
+\pgfplotsset{compat=1.18}
+
+% Color Palette
+\definecolor{DarkBlue}{HTML}{242c3d}
+\definecolor{cream}{HTML}{E9E1DB}
+
+\pagecolor{DarkBlue}
+\AtBeginDocument{\color{cream}}
+
+% Fancy Hdr
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{cream}Evan Krummel}
+\fancyhead[C]{\color{cream}Sample Text}
+\fancyhead[R]{\color{cream}\today}
+\fancyfoot[C]{\color{cream}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{
+  \color{cream}\hrule height \headrulewidth width \headwidth \vspace{-\headrulewidth}
+}
+\setlength{\headheight}{13.6pt}
+
+% Document Content
+\begin{document}
+
+\begin{enumerate}[start=1,label={\bfseries Question \arabic*:},leftmargin=1in]
+    \item Triple Integration
+    
+    \newpage
+    \item Cylindrical Coordinates, Pt. 1
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+    \newpage
+    \item Cylindrical Coordinates, Pt. 2
+
+\end{enumerate}
+
+\end{document}
